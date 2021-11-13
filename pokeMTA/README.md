@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+bundle exec rails db:create
+    Created database 'pokeMTA_development'
+    Created database 'pokeMTA_test'
