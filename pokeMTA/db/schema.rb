@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_11_15_024737) do
 
   create_table "pokedex", force: :cascade do |t|
     t.string "species", null: false
-    t.string "type", null: false
+    t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["species"], name: "index_pokedex_on_species"

@@ -20,7 +20,7 @@ class CreateTrainers < ActiveRecord::Migration[5.2]
 
     create_table :pokedex do |t|
       t.string :species, null:false 
-      t.string :type, null:false 
+      t.string :type
 
       t.timestamps
     end
