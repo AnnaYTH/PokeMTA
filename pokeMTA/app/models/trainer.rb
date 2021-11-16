@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: trainers
+#
+#  id         :bigint           not null, primary key
+#  name       :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Trainer < ApplicationRecord
 
     has_many :pokemon, 
