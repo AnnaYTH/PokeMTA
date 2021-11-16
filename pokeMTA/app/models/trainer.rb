@@ -8,7 +8,8 @@
 #  updated_at :datetime         not null
 #
 class Trainer < ApplicationRecord
-
+    # validates things
+    
     has_many :pokemon, 
         primary_key: :id, 
         foreign_key: :trainer_id, 

@@ -1,3 +1,3 @@
-class TrainerController < ApplicationController
+class TrainersController < ApplicationController
 
 end
