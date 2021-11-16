@@ -1,9 +1,18 @@
 LET'S GO!
 
 
-status conditions
+status conditions for pokemon 
 partial render - slowpoke without tail
 proxy - substitute
+
+Some pokemon do not have a gender
+
+might be cool to add in the pokedex what nature is "best" and what berries the pokemon will like eating due to it's nature
+
+give trainers the option to note if a pokemon has been EV trained? 
+
+traded? radio button 
+would have to toggle trainer_id and captured_by_id, put in a timestamp for when the trading occured 
 
 
 ## FIGVAPER - where? user model
