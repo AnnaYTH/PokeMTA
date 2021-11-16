@@ -1,0 +1,11 @@
+<h1> All The Pokemon! </h1>
+
+<ul> 
+    <% @pokemon.each do |poke| %>
+    <li> 
+    <a href = "<%= pokemon_url(poke) %> ">
+    <%= poke.name %>
+    </li>
+    <% end %>
+</ul>
+
