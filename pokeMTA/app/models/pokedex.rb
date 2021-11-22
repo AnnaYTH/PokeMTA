@@ -1,7 +1,9 @@
 class Pokedex < ApplicationRecord
-    # validates things 
+    validates :species, :type, presence: true 
 
     POKEMON_TYPES = %w(Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dark Dragon Steel Fairy).freeze
+
+    validates :type, inclusion: {in: POKEMON_TYPES, message: "Not a valid pokemon type"}
 
 
 end

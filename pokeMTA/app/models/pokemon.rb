@@ -34,7 +34,7 @@ class Pokemon < ApplicationRecord
         foreign_key: :id, 
         class_name: :Pokedex
 
-    has_many :types, 
+    has_many :types, #not sure about this one, please check me
         through: :species, 
         source: :type
 
