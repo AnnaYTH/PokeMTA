@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
     # CELLL
 
-    helper_method :current_trainer, :logged_in?
+    helper_method :current_trainer_now, :logged_in?
 
-    def current_trainer 
+    def current_trainer_now 
         @current_trainer ||= Trainer.find_by(session_token: session[:session_token])
     end
 
@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
     def logout
         current_trainer.reset_session_token! if logged_in?
         session[:session_token] = nil 
-        redirect_to new_session_url
+        # redirect_to new_session_url
     end
 
     # ENSURRE

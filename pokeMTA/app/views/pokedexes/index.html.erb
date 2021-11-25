@@ -1,0 +1,10 @@
+<h1> ALL THE NAMES OF THE GEN ONE POKEMON </h1>
+
+<ul> 
+    <% @pokemon.each do |poke| %>
+    <li> 
+    <a href = "<%= pokemon_url(poke) %> ">
+    <%= poke.species %>
+    </li>
+    <% end %>
+</ul>

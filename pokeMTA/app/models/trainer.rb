@@ -20,9 +20,9 @@ class Trainer < ApplicationRecord
         class_name: :Pokemon
     
     def self.find_by_credentials(username, password)
-        user = User.find_by(username:username)
-        if user && user.is_password?(password)
-            user
+        trainer = Trainer.find_by(username:username)
+        if trainer && trainer.is_password?(password)
+            trainer
         else 
             nil 
         end

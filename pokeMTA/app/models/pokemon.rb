@@ -29,14 +29,14 @@ class Pokemon < ApplicationRecord
         foreign_key: :trainer_id, 
         class_name: :Trainer
 
-    has_one :species, 
-        primary_key: :pokedex_number, 
-        foreign_key: :id, 
-        class_name: :Pokedex
+    # has_one :species, 
+    #     primary_key: :pokedex_number, 
+    #     foreign_key: :id, 
+    #     class_name: :Pokedex
 
-    has_many :types, #not sure about this one, please check me
-        through: :species, 
-        source: :type
+    # has_many :types, #not sure about this one, please check me
+    #     through: :species, 
+    #     source: :type
 
     def time_with_trainer
         time_ago_in_words(created_at)
